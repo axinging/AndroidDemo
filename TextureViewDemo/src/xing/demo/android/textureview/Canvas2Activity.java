@@ -89,13 +89,18 @@ public class Canvas2Activity extends Activity {
 			float speedY = 0.1f;
 
 			Paint paint = new Paint();
-			paint.setColor(0xff00ff00);
-
+			paint.setColor(0x3f00ff00);
+			Paint paintText = new Paint();
+			paintText.setColor(0xffff0000);
+			
 			while (mRunning && !Thread.interrupted()) {
 				final Canvas canvas = mTextureView.lockCanvas(null);
 				try {
 					canvas.drawColor(0x00000000, PorterDuff.Mode.CLEAR);
 					canvas.drawRect(x, y, x + 850.0f, y + 650.0f, paint);
+
+					paintText.setTextSize(5*paint.getTextSize());
+					canvas.drawText("HELLO",x+100.0f, y+100.0f, paintText);
 				} finally {
 					mTextureView.unlockCanvasAndPost(canvas);
 				}

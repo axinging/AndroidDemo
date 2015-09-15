@@ -38,8 +38,8 @@ public class SplashTextureView extends FrameLayout {
 		// } finally {
 		// mTextureView.unlockCanvasAndPost(canvas);
 		// }
-		if (mBitmap != null)
-			canvas.drawBitmap(mBitmap, 0, 0, null);
+		//if (mBitmap != null)
+			//canvas.drawBitmap(mBitmap, 0, 0, null);
 
 	}
 
