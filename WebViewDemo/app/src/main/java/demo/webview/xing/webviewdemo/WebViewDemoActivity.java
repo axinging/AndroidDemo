@@ -30,7 +30,7 @@ public class WebViewDemoActivity extends ActionBarActivity  implements View.OnCl
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mWebView.setWebViewClient(new MyAppWebViewClient());
-        mWebView.loadUrl("http://www.baidu.com/");
+        mWebView.loadUrl("http://whatsmyua.com/");
         mRefreshButton = (Button) findViewById(R.id.webview_refresh_btn);
         mRefreshButton.setOnClickListener(this);
         /*
