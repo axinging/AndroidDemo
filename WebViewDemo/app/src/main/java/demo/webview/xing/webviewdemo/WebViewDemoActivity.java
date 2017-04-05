@@ -47,6 +47,7 @@ public class WebViewDemoActivity extends ActionBarActivity  implements View.OnCl
         if (v.getId() == mRefreshButton.getId()) {
             Log.i("webview", "reload clicked");
             mWebView.reload();
+            //mWebView.loadUrl("http://whatsmyua.com/");
         }
         /*
         if (v.getId() == mGoButton.getId()) {
